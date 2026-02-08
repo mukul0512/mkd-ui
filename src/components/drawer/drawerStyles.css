@@ -1,0 +1,73 @@
+/* CustomDrawer – all styles below */
+.mkd-drawer-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mkd-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mkd-drawer-panel {
+  position: relative;
+  width: min(360px, 100vw);
+  max-width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.mkd-drawer-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.mkd-drawer-header-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mkd-drawer-content {
+  flex: 1;
+  overflow: auto;
+  padding: 24px;
+}
+
+.mkd-drawer-footer {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.mkd-drawer-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mkd-drawer-btn-cancel {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.23);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.mkd-drawer-btn-save {
+  background-color: #1976d2;
+  border-color: #1976d2;
+  color: #fff;
+}
